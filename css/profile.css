@@ -1,0 +1,82 @@
+/*header */
+h1 {
+  color: black;
+  font-family: arial, sans-serif;
+  margin: auto;
+  width: 40vw;
+}
+/* full menu tab area specification*/
+.tab {
+  color:black;
+  display: block;
+  font-family: arial, sans-serif;
+  margin: auto;
+  position: relative;
+  width: 80vw;
+}
+
+.tab input[name="sections"] {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
+
+.tab section {
+  display: block;
+}
+/*menu tab style*/
+.tab section label {
+  background: cadetblue;
+  border:1px solid floralwhite;
+  cursor: pointer;
+  display: block;
+  font-size: 2vw;
+  font-weight: bold;
+  padding: 1vw;
+  position: relative;
+  width: 12vw;
+  z-index:2;
+}
+
+/*hiding the content*/
+.tab section article {
+  display: none;
+  left: 20vw;
+  min-width: 50vw;
+  padding: 3vw;
+  position: absolute;  
+  top: 0;
+}
+
+
+
+.tab input[name="sections"]:checked + label { 
+  background:bisque;
+  color:  black;
+}
+
+.tab input[name="sections"]:checked ~ article {
+  display: block;
+}
+
+/* changing the default style of pre tag */
+pre{
+  font-size: 2vw;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 10px;
+  width:40vw;
+}
+/*splitting content into 2 columns*/
+p{
+  column-count: 2;
+}
+/* body properties */
+body{
+background: mediumturquoise;
+  height: 100%;
+}
+/* anchor tag properties */
+a{
+  text-decoration: none;
+  color: black;
+}
